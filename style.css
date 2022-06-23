@@ -1,26 +1,46 @@
-/* {
-all color value
-        bg: #F8FBF5;
-        header_txt: #2C3722,#212529;
-        menu_navigation_normal: #8D8D8D;
-        menu_navigation_hover: #000000;
-        section_title: #FEBD00, #FFB243;
-        button: linear-gradient(#8CB560,#639D2B);
-        button shadow: #59882B 30%
-        section text: #545454;
-        menu item hover: #FCFFF8;
-} */
+/* Josefin font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     /*============ Font Family ============*/
-    --main-header-font: 'Josefin Sans';
-    --body-text: 'Poppins';
-    --section-title: 'Cookie';
-    --testimonial-text: 'Open Sans';
-
+    --main-header-font: 'Josefin Sans', sans-serif;
+    --body-text: 'Poppins', sans-serif;
+    --section-title: 'Cookie', sans-serif;
+    --testimonial-text: 'Open Sans', sans-serif;
+    --button-font: 'Poppins', sans-serif;
     /*============ Font Size ============*/
-    --big-font-size:
+    --big-font-size: 7.2rem;
+    --h2-font-size: 4rem;
+    --h3-font-size: 2.4rem;
+    --heading-title: 2.8rem;
+    --body-text-font-size: 1.8rem;
+    --button-font-size: 1.6rem;
+    --input-box-font-size: 1.8rem;
+    --menu-item-font-size: 2.2rem;
+    --testimonial-font-size: 1.4rem;
+    /*============ Font weight ============*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*============ All color ============*/
+    /* #FFB243 #212529 */
+    --section-bg: #F8FBF5;
+    --white-color: #ffffff;
+    --header-color: #2C3722;
+    --nav-normal-color: #8D8D8D;
+    --nav-hover-color: #000000;
+    --section-title-color: #FEBD00;
+    --button-color: linear-gradient(to right, #8CB560, #639D2B);
+    --button-color-hover: linear-gradient(to left, #8CB560, #639D2B);
+    --button-shadow-color: rgba(89, 136, 43, 0.30);
+    --section-text-color: #545454;
+    --food-menu-hover-color: #FCFFF8;
 }
+
 
 /***************************************
             GLOBAL STYLING
@@ -38,22 +58,105 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: black
+}
+
+img {
+    width: 100%;
 }
 
 .container {
-    /*1140px;*/
     max-width: 120rem;
-    padding: 0 3.2rem;
     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+.btn:active,
+.btn:visited {
+    color: var(--white-color);
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-semi-bold);
+
 }
 
 /***************************************
             HEADER SECTION STYLING
 ***************************************/
 .section_hero {
-    display: flex;
+    background-color: var(--section-bg);
+    padding: 4.5rem 0;
+
+}
+
+.section_hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    background-color: #fdf2e9;
+    background-color: var(--section-bg);
+}
+
+.section__title {
+    font-family: var(--main-header-font);
+    font-size: var(--big-font-size);
+    color: var(--header-color);
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.section__text {
+    font-family: var(--body-text);
+    font-size: 2rem;
+    font-weight: var(--font-normal);
+    line-height: 3rem;
+    color: #636465;
+    padding: 3.6rem 0;
+}
+
+.section__img {
+    width: 80%;
+}
+
+.section_btn {
+    display: flex;
+    align-items: center;
+}
+
+
+.section_btn input {
+    border: none;
+    outline: none;
+    padding: 1.5rem 15rem 1.5rem 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 3rem var(--button-shadow-color);
+}
+
+.section_btn .btn_link {
+    display: inline-block;
+    margin-left: 3rem;
+    background: var(--button-color);
+    padding: 1.5rem 2.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 3rem var(--button-shadow-color);
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.btn_link:hover {
+    transform: scale(1.02);
+}
+
+.btn_link:active {
+    transform: scale(.95);
+}
+
+.section_btn input[placeholder] {
+    font-family: var(--button-font-size);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-normal);
+    color: #B7B7B7;
 }
