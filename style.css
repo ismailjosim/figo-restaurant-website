@@ -1,0 +1,59 @@
+/* {
+all color value
+        bg: #F8FBF5;
+        header_txt: #2C3722,#212529;
+        menu_navigation_normal: #8D8D8D;
+        menu_navigation_hover: #000000;
+        section_title: #FEBD00, #FFB243;
+        button: linear-gradient(#8CB560,#639D2B);
+        button shadow: #59882B 30%
+        section text: #545454;
+        menu item hover: #FCFFF8;
+} */
+
+:root {
+    /*============ Font Family ============*/
+    --main-header-font: 'Josefin Sans';
+    --body-text: 'Poppins';
+    --section-title: 'Cookie';
+    --testimonial-text: 'Open Sans';
+
+    /*============ Font Size ============*/
+    --big-font-size:
+}
+
+/***************************************
+            GLOBAL STYLING
+***************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black
+}
+
+.container {
+    /*1140px;*/
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+/***************************************
+            HEADER SECTION STYLING
+***************************************/
+.section_hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+}
