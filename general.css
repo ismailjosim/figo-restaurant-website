@@ -1,0 +1,83 @@
+/* Josefin font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+/* Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /*============ Font Family ============*/
+    --main-header-font: 'Josefin Sans', sans-serif;
+    --body-text: 'Poppins', sans-serif;
+    --section-title: 'Open Sans', sans-serif;
+    --testimonial-text: 'Open Sans', sans-serif;
+    --button-font: 'Poppins', sans-serif;
+    /*============ Font Size ============*/
+    --big-font-size: 7.2rem;
+    --h2-font-size: 4rem;
+    --h3-font-size: 2.4rem;
+    --heading-title: 2.8rem;
+    --body-text-font-size: 1.8rem;
+    --button-font-size: 1.6rem;
+    --input-box-font-size: 1.8rem;
+    --menu-item-font-size: 2.2rem;
+    --testimonial-font-size: 1.4rem;
+    /*============ Font weight ============*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*============ All color ============*/
+    /* #FFB243 #212529 */
+    --section-bg: #F8FBF5;
+    --white-color: #ffffff;
+    --header-color: #2C3722;
+    --nav-normal-color: #8D8D8D;
+    --nav-hover-color: #000000;
+    --section-title-color: #FEBD00;
+    --button-color: linear-gradient(to right, #8CB560, #639D2B);
+    --button-color-hover: linear-gradient(to left, #8CB560, #639D2B);
+    --button-shadow-color: rgba(89, 136, 43, 0.30);
+    --section-text-color: #545454;
+    --food-menu-hover-color: #FCFFF8;
+}
+
+
+/***************************************
+            GLOBAL STYLING
+***************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn,
+.btn:active,
+.btn:visited {
+    color: var(--white-color);
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    font-weight: var(--font-semi-bold);
+
+}
