@@ -176,6 +176,7 @@
 .news_box .box_heading {
     font-family: var(--main-header-font);
     font-size: var(--h3-font-size);
+    user-select: none;
 }
 
 .news_text {
@@ -185,12 +186,17 @@
     font-weight: var(--font-normal);
     margin-bottom: 2rem;
     line-height: 2;
+    user-select: none;
 }
 
 .btn_link {
     color: var(--section-title-color);
     font-size: var(--button-font-size);
     font-weight: var(--font-semi-bold);
+}
+
+.btn_link:hover {
+    color: var(--link-hover-color);
 }
 
 /***************************************
@@ -241,4 +247,91 @@
 .left_icon {
     position: relative;
     top: 2px;
+}
+
+/***************************************
+        FOOTER SECTION STYLING
+***************************************/
+.section_footer {
+    background-color: var(--section-bg);
+}
+
+.section_footer .container {
+    padding: 5rem 0;
+}
+
+.section_footer .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 0 !important;
+}
+
+.details .logo {
+    width: 50px;
+}
+
+.footer_text {
+    font-family: var(--body-text);
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 2rem 0;
+}
+
+.social_links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social_links a {
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    background: var(--button-color);
+    box-shadow: 1px 5px 5px var(--button-shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.social_links a i {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    transition: all 0.3s;
+}
+
+.social_links a:hover i {
+    transform: rotate(360deg);
+}
+
+.footer_heading {
+    font-family: var(--section-title);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    margin-bottom: 3rem;
+}
+
+.section_footer .list_item {
+    margin-bottom: 1.8rem;
+    font-size: 1.6rem;
+    font-weight: var(--font-medium);
+}
+
+.section_footer .list_item i,
+.section_footer .list_item a {
+    color: var(--section-text-color);
+    transition: all .3s;
+}
+
+.section_footer .list_item a:hover {
+    color: #000000;
+}
+
+.section_footer .list_item:last-child {
+    margin-bottom: 0;
+}
+
+.contact li i {
+    margin-right: 1rem;
 }
